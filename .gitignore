@@ -1,0 +1,15 @@
+# Root gitignore
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+*.log
+.DS_Store
+.idea/
+.vscode/
+.gemini/
+server/dist/
+client/dist/
+server/node_modules/
+client/node_modules/
