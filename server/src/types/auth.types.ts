@@ -1,13 +1,10 @@
-import { Document } from 'mongoose';
-
-export interface IUser extends Document {
-  _id: string;
+export interface IUser {
+  id: string;
   name: string;
   email: string;
-  password: string;
-  createdAt: Date;
-  updatedAt: Date;
-  matchPassword: (password: string) => Promise<boolean>;
+  password?: string;
+  createdAt?: Date;
+  updatedAt?: Date;
 }
 
 export interface AuthResponse {
